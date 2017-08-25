@@ -1,0 +1,3 @@
+javac -cp /project/target/lib/weka.jar;. /project/target/src/com/gg/ml/LinearRegressionDemo.java
+
+java -cp /project/target/lib/weka.jar;. /project/target/src/com/gg/ml/LinearRegressionDemo
