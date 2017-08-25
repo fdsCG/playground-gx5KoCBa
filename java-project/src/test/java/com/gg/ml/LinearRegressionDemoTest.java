@@ -7,7 +7,7 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
 
-public class LinearRegressionDemo {
+public class LinearRegressionDemoTest {
 	
 	@Test
 	public void test() throws Exception  {
