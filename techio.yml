@@ -18,4 +18,4 @@ projects:
     # More details here: https://github.com/TechDotIO/java-maven3-junit4-runner
     runner:
      name: openjdk
-     version: openjdk-8-jre
+     version: 8-jdk
