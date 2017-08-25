@@ -9,7 +9,7 @@ import weka.core.converters.ArffLoader;
 
 public class LinearRegressionDemo {
 
-public static void main(String[] args) throws Exception {
+public void process() throws Exception {
 		// TODO Auto-generated method stubArffLoader loader = new ArffLoader();
 		ArffLoader loader = new ArffLoader();
 		loader.setFile(new File("linear-train.arff"));
