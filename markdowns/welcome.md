@@ -1,6 +1,6 @@
-# Welcome To Machine Learning with Java! - Part 1
+# Machine Learning with Java! - Part 1 (Linear Regression)
 
-Most of the articles describe how to use machine learning algorithm in Python.In this article , we are going to discuss the machine learni ng alogithm with Java.
+Most of the articles describe "How to use machine learning algorithm in Python?".In this article , we are going to discuss "How to use the machine learning alogithm with Java?".
 
 #  Machine Learning
 
@@ -9,39 +9,38 @@ Machine Learning is an application of Artificial Intelligence which provides the
 # Supervised learning  
 
 Supervised learning is the process of an algorithm learning from the training set (historical data). 
-We will pass the training set to train the algorithm and testing set to test the algorithm. The algorith will be trained till it reaches the accuracy.Once the algorithm reaches the accuracy, it will be used to predict the output for the new input.
 
-They are further grouped into regression and classification problems.
-Classification : Output variable is a category like yes or no , disease or no disease
-Regression : Output variable is a realo value like weight , price
+We will pass the data to train the algorithm and also the data to test the algorithm. The algorithm will be trained till it reaches the accuracy.we can predict the output for the given input once algorithm reaches the accuracy with the training and testing data.
 
-few Examples of supervised learning algorithm:
+They are further grouped into regression and classification problems. 
 
-Linear regression for regression problems.
-Random forest for classification and regression problems.
+1. Classification : Output variable is a category like yes or no,disease or no disease 
+2. Regression : Output variable is a real value like weight , price.
 
 # Unsupervised learning
 
-Unsupervised learning is where you only have input data (X) and no corresponding output variables.There are no training sets to train the alogorithm in unsupervised learning.
+There are no training sets to train the alogorithm in unsupervised learning.i.e., we only have the input data (X) and no corresponding output data.
 
 Unsupervised learning problems can be further grouped into clustering and association problems.
 
-Clustering : It is discovering the inherent grouping in data like grouping the customer by purchasing behaviour
-Association :  To discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
+1. Clustering : It is discovering the inherent grouping in data like grouping the customer by purchasing behaviour 
+2. Association : To discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
 
-Example :
-k-means for clustering problems.
 
 # Semi-Supervised Machine Learning
 
-There are large amount of data in which only partial data is labelled and remaning are unlabelled are called Semi-Supervised Machine Learning.Many real world machine learning problems fall into this area. This is because it can be expensive or time-consuming to label data as it may require access to domain experts. Whereas unlabeled data is cheap and easy to collect and store.
+There are large amount of data in which only partial data is labelled and remaning are unlabelled are called Semi-Supervised MachineLearning.
+Many real world machine learning problems fall into this area. This is because it can be expensive or time-consuming to label data as it may require access to domain experts. Whereas unlabeled data is cheap and easy to collect and store. 
+
 This stands inbetween above two case.
 
 A good example is a photo archive where only some of the images are labeled, (e.g. dog, cat, person) and the majority are unlabeled.
 
 # Linear Regression 
 
-In Linear Regression, the outcome (dependent variable) is continuous. It can have any one of an infinite number of possible values. In logistic regression, the outcome (dependent variable) has only a limited number of possible values. Logistic Regression is used when response variable is categorical in nature
+In Linear Regression, the outcome (dependent variable) is continuous. It can have any one of an infinite number of possible values.
+
+In logistic regression, the outcome (dependent variable) has only a limited number of possible values. Logistic Regression is used when response variable is categorical in nature.
 
 # Hands-on Demo
 
