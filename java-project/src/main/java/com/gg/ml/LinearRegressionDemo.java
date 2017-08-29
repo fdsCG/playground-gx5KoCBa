@@ -1,5 +1,6 @@
 package com.gg.ml;
-import java.io.File;
+
+import java.io.IOException;
 
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
@@ -7,48 +8,72 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
 
+/**
+ * This class is used to explain the Linear Regression with Java.
+ * 
+ * @author Gowtham Girithar Srirangasamy
+ *
+ */
 public class LinearRegressionDemo {
-    
-   
+	
+	/** file names are defined*/
+	public static final String TRAINING_DATA_SET_FILENAME="linear-train.arff";
+	public static final String TESTING_DATA_SET_FILENAME="linear-test.arff";
+	public static final String PREDICTION_DATA_SET_FILENAME="test-confused.arff";
 
-public static void process() throws Exception {
-		
-		ArffLoader loader = new ArffLoader();
-
-	    loader.setSource(LinearRegressionDemo.class.getResourceAsStream("/linear-train.arff"));
-		Instances trainingSet = loader.getDataSet();
-		// this is the complexity, here we specify what are our classes,
-		// into which we want to classify the data
+	/**
+	 * This method is to load the data set.
+	 * @param fileName
+	 * @return
+	 * @throws IOException
+	 */
+	public static Instances getDataSet(String fileName) throws IOException {
+		/**
+		 * we can set the file i.e., loader.setFile("finename") to load the data
+		 */
 		int classIdx = 1;
+		/** the arffloader to load the arff file */
+		ArffLoader loader = new ArffLoader();
+		/** load the traing data */
+		loader.setSource(LinearRegressionDemo.class.getResourceAsStream("/" + fileName));
+		/**
+		 * we can also set the file like loader3.setFile(new
+		 * File("test-confused.arff"));
+		 */
+		Instances dataSet = loader.getDataSet();
+		/** set the index based on the data given in the arff files */
+		dataSet.setClassIndex(classIdx);
+		return dataSet;
+	}
 
-		ArffLoader loader2 = new ArffLoader();
-		loader2.setSource(LinearRegressionDemo.class.getResourceAsStream("/linear-test.arff"));
-	//	loader2.setFile(new File("linear-test.arff"));
-		Instances testSet = loader2.getDataSet();
+	/**
+	 * This method is used to process the input and return the statistics.
+	 * 
+	 * @throws Exception
+	 */
+	public static void process() throws Exception {
 
-		trainingSet.setClassIndex(classIdx);
-		testSet.setClassIndex(classIdx);
-
-	
+		Instances trainingDataSet = getDataSet(TRAINING_DATA_SET_FILENAME);
+		Instances testingDataSet = getDataSet(TESTING_DATA_SET_FILENAME);
+		/** Classifier here is Linear Regression */
 		Classifier classifier = new weka.classifiers.functions.LinearRegression();
-		
-		
-		classifier.buildClassifier(trainingSet);
-
-		Evaluation eval = new Evaluation(trainingSet);
-		eval.evaluateModel(classifier, testSet);
-
+		/** */
+		classifier.buildClassifier(trainingDataSet);
+		/**
+		 * train the alogorithm with the training data and evaluate the
+		 * algorithm with testing data
+		 */
+		Evaluation eval = new Evaluation(trainingDataSet);
+		eval.evaluateModel(classifier, testingDataSet);
+		/** Print the algorithm summary */
+		System.out.println("** Linear Regression Evaluation with Datasets **");
 		System.out.println(eval.toSummaryString());
-		
-		ArffLoader loader3 = new ArffLoader();
-		loader3.setSource(LinearRegressionDemo.class.getResourceAsStream("/test-confused.arff"));
-	//	loader3.setFile(new File("test-confused.arff"));
-		Instances dataSet = loader3.getDataSet();
-		Instance myHouse = dataSet.lastInstance();
-		double price = classifier.classifyInstance(myHouse);
+		System.out.print(" the expression for the input data as per alogorithm is ");
 		System.out.println(classifier);
-		System.out.println(price);
-	
-		
 
-}}
+		Instance predicationDataSet = getDataSet(PREDICTION_DATA_SET_FILENAME).lastInstance();
+		double value = classifier.classifyInstance(predicationDataSet);
+		/** Prediction Output */
+		System.out.println(value);
+	}
+}
