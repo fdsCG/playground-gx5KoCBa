@@ -8,18 +8,22 @@ import weka.core.Instances;
 import weka.core.converters.ArffLoader;
 
 public class LinearRegressionDemo {
+    
+   
 
 public static void process() throws Exception {
-		// TODO Auto-generated method stubArffLoader loader = new ArffLoader();
+		
 		ArffLoader loader = new ArffLoader();
-		loader.setFile(new File("linear-train.arff"));
+
+	    loader.setSource(LinearRegressionDemo.class.getResourceAsStream("/linear-train.arff"));
 		Instances trainingSet = loader.getDataSet();
 		// this is the complexity, here we specify what are our classes,
 		// into which we want to classify the data
 		int classIdx = 1;
 
 		ArffLoader loader2 = new ArffLoader();
-		loader2.setFile(new File("linear-test.arff"));
+		loader2.setSource(LinearRegressionDemo.class.getResourceAsStream("/linear-test.arff"));
+	//	loader2.setFile(new File("linear-test.arff"));
 		Instances testSet = loader2.getDataSet();
 
 		trainingSet.setClassIndex(classIdx);
@@ -37,7 +41,8 @@ public static void process() throws Exception {
 		System.out.println(eval.toSummaryString());
 		
 		ArffLoader loader3 = new ArffLoader();
-		loader3.setFile(new File("test-confused.arff"));
+		loader3.setSource(LinearRegressionDemo.class.getResourceAsStream("/test-confused.arff"));
+	//	loader3.setFile(new File("test-confused.arff"));
 		Instances dataSet = loader3.getDataSet();
 		Instance myHouse = dataSet.lastInstance();
 		double price = classifier.classifyInstance(myHouse);
