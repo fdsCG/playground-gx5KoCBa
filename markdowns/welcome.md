@@ -42,14 +42,16 @@ In Linear Regression, the outcome (dependent variable) is continuous. It can hav
 
 In logistic regression, the outcome (dependent variable) has only a limited number of possible values. Logistic Regression is used when response variable is categorical in nature.
 
-# Hands-on Demo
+# Linear Regression with Java
 
-@[Luke, how many stars are there in these galaxies?]({"stubs": ["src/main/java/com/gg/ml/LinearRegressionDemo.java"], "command": "com.gg.ml.LinearRegressionDemoTest#test"})
+@[Linear Regression Demo]({"stubs": ["src/main/java/com/gg/ml/LinearRegressionDemo.java"], "command": "com.gg.ml.LinearRegressionDemoTest#test"})
 
 Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/java-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
 
 # Training and Testing Set 
 
-Your model needs to see as many images of cats as possible to understand which characteristics are those of the object in question - cats, and which ones are just background noise. To have a model that generalizes well, you need to ensure this works irrespective of background, color intensities, sizes, etc. You may need thousands to millions of such images to achieve decent feature extraction that lead to low classification accuracy. You don't need a million unique samples to test if your model has learnt the above and having a few samples of each type of cat should be enough of a test.
+Our model needs to see lot of possible data to understand which characteristics are those of the object in question. To have a model that generalizes well, you need to ensure this works irrespective of background, color intensities, sizes, etc.
+Example:
+we may need thousands to millions of such images to achieve decent feature extraction that lead to low classification accuracy. we don't need a million unique samples to test if your model has learnt the above and having a few samples of each type of cat should be enough of a test.
 
 
