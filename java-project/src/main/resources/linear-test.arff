@@ -1,11 +1,10 @@
-@relation weather.symbolic
+@relation icecreamsales.symbolic
 
-@attribute outlook numeric
 @attribute temperature numeric
+@attribute icecreamsales numeric
 
 @data
 
-8,9
-5, 6
-6, 7
-4,5
+14.2	215
+16.4	325
+11.9	185
