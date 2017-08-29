@@ -49,8 +49,11 @@ Example:
 we may need thousands to millions of such images to achieve decent feature extraction that lead to low classification accuracy. we don't need a million unique samples to test if your model has learnt the above and having a few samples of each type of cat should be enough of a test.
 
 # Sample Training and Testing Data
-Training Data                                            Testing Data
-![Train Diagram](train.PNG)                             ![Test Diagram](test.PNG)
+<B> Training Data </B>                                         
+![Train Diagram](train.PNG)                            
+
+<B> Testing Data </B>
+![Test Diagram](test.PNG)
 
 # Linear Regression with Java
 
