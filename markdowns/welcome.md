@@ -50,7 +50,10 @@ we may need thousands to millions of such images to achieve decent feature extra
 
 # Sample Training and Testing Data
 <B> Training Data </B>                                         
-![Train Diagram](train.PNG)                            
+![Train Diagram](train.PNG)   
+
+                                      
+![Train Diagram](Plot.PNG)       
 
 <B> Testing Data </B>
 ![Test Diagram](test.PNG)
