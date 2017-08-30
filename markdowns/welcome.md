@@ -14,8 +14,8 @@ We will pass the data to train the algorithm and also the data to test the algor
 
 They are further grouped into regression and classification problems. 
 
-1. Classification : Output variable is a category like yes or no,disease or no disease 
-2. Regression : Output variable is a real value like weight , price.
+1. <B>Classification : </B>Output variable is a category like yes or no,disease or no disease 
+2. <B>Regression : </B>Output variable is a real value like weight , price.
 
 # Unsupervised learning
 
@@ -23,8 +23,8 @@ There are no training sets to train the alogorithm in unsupervised learning.i.e.
 
 Unsupervised learning problems can be further grouped into clustering and association problems.
 
-1. Clustering : It is discovering the inherent grouping in data like grouping the customer by purchasing behaviour 
-2. Association : To discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
+1. <B>Clustering : </B>It is discovering the inherent grouping in data like grouping the customer by purchasing behaviour 
+2. <B>Association : </B>To discover rules that describe large portions of your data, such as people that buy X also tend to buy Y.
 
 
 # Semi-Supervised Machine Learning
@@ -69,7 +69,12 @@ Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/java-tem
 
 ## Explanation
 
-Correlation values lies between -1 and 1 , where 1 is very strong and linear relation , -1 is inverse linear relation and 0 indicates no relation.
+Correlation values lies between -1 and 1 , where 1 is very strong and linear relation , -1 is inverse linear relation and 0 indicates no relation.Based on the correlation data output from the training and testing data, we can find the accuracy of the algorithm for this scenario.
+
+The other calculations are based on the formula.
+
+continuation of this will be in part 2.
+
 
 
 
