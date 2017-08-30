@@ -55,7 +55,10 @@ we may need thousands to millions of such images to achieve decent feature extra
                                       
 ![Train Diagram](Plot.PNG)       
 
+
+
 <B> Testing Data </B>
+
 ![Test Diagram](test.PNG)
 
 # Linear Regression with Java
