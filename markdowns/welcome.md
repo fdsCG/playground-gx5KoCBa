@@ -73,7 +73,7 @@ Correlation values lies between -1 and 1 , where 1 is very strong and linear rel
 
 The other calculations are based on the formula.
 
-continuation of this will be in part 2.
+Part 2 will describe the Logistics Regression with Java.
 
 
 
