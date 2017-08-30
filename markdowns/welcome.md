@@ -61,9 +61,9 @@ we may need thousands to millions of such images to achieve decent feature extra
 
 @[Linear Regression Demo]({"stubs": ["src/main/java/com/gg/ml/LinearRegressionDemo.java"], "command": "com.gg.ml.LinearRegressionDemoTest#test"})
 
-Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/java-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
 
-## Explanation
+
+# Explanation
 
 Correlation values lies between -1 and 1 , where 1 is very strong and linear relation , -1 is inverse linear relation and 0 indicates no relation.Based on the correlation data output from the training and testing data, we can find the accuracy of the algorithm for this scenario.
 
