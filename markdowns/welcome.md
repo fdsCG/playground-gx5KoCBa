@@ -67,7 +67,6 @@ Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/java-tem
 
 Correlation values lies between -1 and 1 , where 1 is very strong and linear relation , -1 is inverse linear relation and 0 indicates no relation.Based on the correlation data output from the training and testing data, we can find the accuracy of the algorithm for this scenario.
 
-The other calculations are based on the formula.
 
 Part 2 will describe the Logistics Regression with Java.
 
