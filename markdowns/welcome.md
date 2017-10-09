@@ -1,6 +1,6 @@
 # Machine Learning with Java - Part 1 (Linear Regression)
 
-Most of the articles describe "How to use machine learning algorithm in Python?".In this article , we are going to discuss "How to use the machine learning alogithm with Java?".
+Most of the articles describe "How to use machine learning algorithm in Python?". In this article, we are going to discuss "How to use the machine learning alogithm with Java?".
 
 #  Machine Learning
 
